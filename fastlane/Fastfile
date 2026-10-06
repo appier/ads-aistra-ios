@@ -33,14 +33,14 @@ platform :ios do
     branch_name = options.fetch(:branch_name, "release_aistra_sdk")
     framework_version = get_framework_version_aistra_sdk
 
-    # version_argus_sdk.json is the podspec's version source of truth.
-    File.write("../version_argus_sdk.json", { "version" => "v#{framework_version}" }.to_json)
+    # version_aistra_sdk.json is the podspec's version source of truth.
+    File.write("../version_aistra_sdk.json", { "version" => "v#{framework_version}" }.to_json)
 
     sh "git checkout -b #{branch_name}"
 
     path = [
       "./Aistra.xcframework/*",
-      "./version_argus_sdk.json"
+      "./version_aistra_sdk.json"
     ]
     git_add(path: path)
 

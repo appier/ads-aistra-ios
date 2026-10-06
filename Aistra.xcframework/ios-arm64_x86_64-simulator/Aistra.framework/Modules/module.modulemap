@@ -1,0 +1,10 @@
+framework module Aistra {
+  umbrella header "Aistra.h"
+  export *
+
+  module * { export * }
+}
+
+module Aistra.Swift {
+  header "Aistra-Swift.h"
+}
