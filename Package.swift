@@ -1,33 +1,33 @@
 // swift-tools-version:5.7.1
 import PackageDescription
 
-// SPM distribution of the Argus device-signal SDK.
+// SPM distribution of the Aistra device-signal SDK.
 //
-// The precompiled binary ships as `Argus.xcframework` (a binaryTarget). The
-// public module is `Argus` (`import Argus`) and comes from that binary. The
-// `ArgusWrapper` target is an (empty) shim that depends on the binary and
-// declares the system frameworks Argus needs, so integrators get the correct
-// link line automatically. Consume it as the `Argus` library product.
+// The precompiled binary ships as `Aistra.xcframework` (a binaryTarget). The
+// public module is `Aistra` (`import Aistra`) and comes from that binary. The
+// `AistraWrapper` target is an (empty) shim that depends on the binary and
+// declares the system frameworks Aistra needs, so integrators get the correct
+// link line automatically. Consume it as the `Aistra` library product.
 let package = Package(
-    name: "Argus",
+    name: "Aistra",
     platforms: [.iOS(.v12)],
     products: [
         .library(
-            name: "Argus",
-            targets: ["ArgusWrapper"]
+            name: "Aistra",
+            targets: ["AistraWrapper"]
         )
     ],
     targets: [
         .binaryTarget(
-            name: "Argus",
-            path: "Argus.xcframework"
+            name: "Aistra",
+            path: "Aistra.xcframework"
         ),
         .target(
-            name: "ArgusWrapper",
+            name: "AistraWrapper",
             dependencies: [
-                .target(name: "Argus")
+                .target(name: "Aistra")
             ],
-            path: "Sources/ArgusWrapper",
+            path: "Sources/AistraWrapper",
             linkerSettings: [
                 .linkedFramework("Foundation"),
                 .linkedFramework("UIKit"),

@@ -40,7 +40,7 @@ jobs:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         set -euo pipefail
-        version="$(jq -r '.version' version_argus_sdk.json | sed 's/^v//')"
+        version="$(jq -r '.version' version_aistra_sdk.json | sed 's/^v//')"
         tag="${version}"
         zip -qr AistraFramework.zip Aistra.xcframework
         if gh release view "$tag" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
