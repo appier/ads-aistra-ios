@@ -15,17 +15,17 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios pr_argus_sdk
+### ios pr_aistra_sdk
 
-Open the Argus SDK release PR (commits the new `Argus.xcframework` + version).
+Open the Aistra SDK release PR (commits the new `Aistra.xcframework` + version).
 Invoked by the source repo's release CI after it builds the signed framework.
 
-### ios release_argus_sdk
+### ios release_aistra_sdk
 
-Create the Argus SDK GitHub release — tags `argus-sdk-v<version>` and attaches a
-zipped `Argus.xcframework` (`ArgusFramework.zip`) for direct download.
+Create the Aistra SDK GitHub release — tags the plain version (e.g. `2.0.0`) and
+attaches a zipped `Aistra.xcframework` (`AistraFramework.zip`) for direct download.
 
-### ios pods_argus_sdk
+### ios pods_aistra_sdk
 
 Push the podspec to CocoaPods trunk.
 
