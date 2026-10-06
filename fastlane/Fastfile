@@ -1,33 +1,37 @@
-# Fastlane for the Argus binary-distribution repo (appier/ads-argus-ios).
+# Fastlane for the Aistra binary-distribution repo (appier/ads-aistra-ios).
 #
-# This repo holds the shipped Argus.xcframework plus the CocoaPods podspec and
+# This repo holds the shipped Aistra.xcframework plus the CocoaPods podspec and
 # SPM manifest. It mirrors appier/ads-ios-sdk. The build/test lives in the
 # private source repo (plaxieappier/appier-ads-data-signal-ios); its release CI
-# builds the signed xcframework and calls `pr_argus_sdk` here to open the
-# release PR. Merging that PR runs `release_argus_sdk` (this repo, built-in
-# token, zero stored secrets). `pods_argus_sdk` is invoked separately by a
-# manual workflow in the private repo so the CocoaPods trunk credential never
-# lives here.
+# builds the signed xcframework and calls `pr_aistra_sdk` here to open the
+# release PR. Merging that PR runs the release_framework workflow (this repo,
+# built-in token, zero stored secrets). `pods_aistra_sdk` is invoked separately
+# by a manual workflow in the private repo so the CocoaPods trunk credential
+# never lives here.
 #
 # Lanes:
-#   pr_argus_sdk      # open the release PR (updates Argus.xcframework + version)
-#   release_argus_sdk # tag + GitHub release with a zipped xcframework asset
-#   pods_argus_sdk    # push the podspec to CocoaPods trunk (run from private CI)
+#   pr_aistra_sdk      # open the release PR (updates Aistra.xcframework + version)
+#   release_aistra_sdk # tag + GitHub release with a zipped xcframework asset
+#   pods_aistra_sdk    # push the podspec to CocoaPods trunk (run from private CI)
 
 default_platform(:ios)
 
 platform :ios do
 
-  GITHUB_REPO = "appier/ads-argus-ios".freeze
+  GITHUB_REPO = "appier/ads-aistra-ios".freeze
+
+  # Pre-rename binary. The first Aistra release PR removes it; later releases
+  # no longer find it and skip the removal.
+  LEGACY_FRAMEWORK = "Argus.xcframework".freeze
 
   before_all do
     setup_circle_ci if ENV["CI"]
   end
 
-  desc "Open the Argus SDK release PR (commits the new Argus.xcframework + version)."
-  lane :pr_argus_sdk do |options|
-    branch_name = options.fetch(:branch_name, "release_argus_sdk")
-    framework_version = get_framework_version_argus_sdk
+  desc "Open the Aistra SDK release PR (commits the new Aistra.xcframework + version)."
+  lane :pr_aistra_sdk do |options|
+    branch_name = options.fetch(:branch_name, "release_aistra_sdk")
+    framework_version = get_framework_version_aistra_sdk
 
     # version_argus_sdk.json is the podspec's version source of truth.
     File.write("../version_argus_sdk.json", { "version" => "v#{framework_version}" }.to_json)
@@ -35,11 +39,19 @@ platform :ios do
     sh "git checkout -b #{branch_name}"
 
     path = [
-      "./Argus.xcframework/*",
+      "./Aistra.xcframework/*",
       "./version_argus_sdk.json"
     ]
     git_add(path: path)
-    git_commit(path: path, message: "Release Argus SDK #{framework_version}")
+
+    # Drop the pre-rename binary in the same commit so the release PR ships
+    # only Aistra.xcframework.
+    if File.exist?("../#{LEGACY_FRAMEWORK}")
+      Dir.chdir("..") { sh "git rm -r -q #{LEGACY_FRAMEWORK}" }
+      path << "./#{LEGACY_FRAMEWORK}"
+    end
+
+    git_commit(path: path, message: "Release Aistra SDK #{framework_version}")
 
     push_to_git_remote(
       force: true,
@@ -55,25 +67,27 @@ platform :ios do
       body: {
         "head": branch_name,
         "base": "main",
-        "title": "Release Argus SDK v#{framework_version}"
+        "title": "Release Aistra SDK v#{framework_version}"
       }
     )
   end
 
-  desc "Create the Argus SDK GitHub release (tag + zipped xcframework asset for direct download)."
-  lane :release_argus_sdk do
-    framework_version = get_framework_version_argus_sdk
-    tag = "argus-sdk-v#{framework_version}"
-    archive_name = "ArgusFramework.zip"
+  desc "Create the Aistra SDK GitHub release (tag + zipped xcframework asset for direct download)."
+  lane :release_aistra_sdk do
+    framework_version = get_framework_version_aistra_sdk
+    # Plain semver tag, same as the release_framework workflow, so SPM resolves
+    # it and the podspec's :tag matches.
+    tag = framework_version
+    archive_name = "AistraFramework.zip"
 
     Dir.chdir("..") do
-      sh "zip -r #{archive_name} Argus.xcframework"
+      sh "zip -r #{archive_name} Aistra.xcframework"
     end
 
     set_github_release(
       repository_name: GITHUB_REPO,
       api_token: ENV["GITHUB_TOKEN"],
-      name: "Appier Argus iOS SDK #{framework_version}",
+      name: "Appier Aistra iOS SDK #{framework_version}",
       tag_name: tag,
       description: "",
       commitish: "main",
@@ -81,17 +95,17 @@ platform :ios do
     )
   end
 
-  desc "Deploy the Argus podspec to CocoaPods trunk."
-  lane :pods_argus_sdk do
+  desc "Deploy the Aistra podspec to CocoaPods trunk."
+  lane :pods_aistra_sdk do
     Dir.chdir("..") do
-      sh "pod trunk push AppierArgus.podspec --allow-warnings"
+      sh "pod trunk push AppierAistra.podspec --allow-warnings"
     end
   end
 
   # Reads the shipped framework's marketing version straight from the binary so
   # the tag/podspec/version file can never drift from what was actually built.
-  private_lane :get_framework_version_argus_sdk do
-    plist_file = "../Argus.xcframework/ios-arm64/Argus.framework/Info.plist"
+  private_lane :get_framework_version_aistra_sdk do
+    plist_file = "../Aistra.xcframework/ios-arm64/Aistra.framework/Info.plist"
     sh("/usr/libexec/PlistBuddy #{plist_file} -c 'Print :CFBundleShortVersionString'").strip
   end
 

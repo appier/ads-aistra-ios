@@ -1,6 +1,6 @@
-# Runs when an Argus release PR is merged into main (head branch release-* /
+# Runs when an Aistra release PR is merged into main (head branch release-* /
 # prerelease-*): cuts the GitHub release — a plain semver tag <version> (e.g.
-# 1.0.0) plus a zipped Argus.xcframework asset (ArgusFramework.zip) for direct
+# 2.0.0) plus a zipped Aistra.xcframework asset (AistraFramework.zip) for direct
 # download. Plain semver so SPM resolves it (`from: "1.0.0"`); the CocoaPods
 # podspec and direct download share the same tag.
 #
@@ -42,14 +42,14 @@ jobs:
         set -euo pipefail
         version="$(jq -r '.version' version_argus_sdk.json | sed 's/^v//')"
         tag="${version}"
-        zip -qr ArgusFramework.zip Argus.xcframework
+        zip -qr AistraFramework.zip Aistra.xcframework
         if gh release view "$tag" --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
           echo "Release ${tag} exists — refreshing asset."
-          gh release upload "$tag" ArgusFramework.zip --repo "${GITHUB_REPOSITORY}" --clobber
+          gh release upload "$tag" AistraFramework.zip --repo "${GITHUB_REPOSITORY}" --clobber
         else
-          gh release create "$tag" ArgusFramework.zip \
+          gh release create "$tag" AistraFramework.zip \
             --repo "${GITHUB_REPOSITORY}" \
-            --title "Appier Argus iOS SDK ${version}" \
+            --title "Appier Aistra iOS SDK ${version}" \
             --notes "" \
             --target main
         fi
