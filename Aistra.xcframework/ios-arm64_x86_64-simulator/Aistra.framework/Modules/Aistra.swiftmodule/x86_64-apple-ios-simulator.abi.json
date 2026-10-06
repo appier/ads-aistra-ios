@@ -1,0 +1,1811 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "Aistra",
+    "printedName": "Aistra",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AistraSDK",
+        "printedName": "AistraSDK",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Aistra0A3SDKC5startyyFZ",
+            "mangledName": "$s6Aistra0A3SDKC5startyyFZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra0A3SDKC7versionSSvpZ",
+            "mangledName": "$s6Aistra0A3SDKC7versionSSvpZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra0A3SDKC7versionSSvgZ",
+                "mangledName": "$s6Aistra0A3SDKC7versionSSvgZ",
+                "moduleName": "Aistra",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "recordAdEvent",
+            "printedName": "recordAdEvent(_:bidObjId:meta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdEvent",
+                "printedName": "Aistra.AdEvent",
+                "usr": "s:6Aistra7AdEventO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdEventMeta",
+                "printedName": "Aistra.AdEventMeta",
+                "hasDefaultArg": true,
+                "usr": "s:6Aistra11AdEventMetaV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Aistra0A3SDKC13recordAdEvent_8bidObjId4metayAA0dE0O_SSAA0dE4MetaVtFZ",
+            "mangledName": "$s6Aistra0A3SDKC13recordAdEvent_8bidObjId4metayAA0dE0O_SSAA0dE4MetaVtFZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "recordStoreViewDisplayed",
+            "printedName": "recordStoreViewDisplayed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Aistra0A3SDKC24recordStoreViewDisplayedyyFZ",
+            "mangledName": "$s6Aistra0A3SDKC24recordStoreViewDisplayedyyFZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getData",
+            "printedName": "getData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Aistra@objc(cs)AistraSDK(cm)getData",
+            "mangledName": "$s6Aistra0A3SDKC7getData10Foundation0D0VyFZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "locationProvider",
+            "printedName": "locationProvider",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Aistra.LocationProviding)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationProviding",
+                    "printedName": "any Aistra.LocationProviding",
+                    "usr": "s:6Aistra17LocationProvidingP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvpZ",
+            "mangledName": "$s6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvpZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Aistra.LocationProviding)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationProviding",
+                        "printedName": "any Aistra.LocationProviding",
+                        "usr": "s:6Aistra17LocationProvidingP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvgZ",
+                "mangledName": "$s6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvgZ",
+                "moduleName": "Aistra",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any Aistra.LocationProviding)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LocationProviding",
+                        "printedName": "any Aistra.LocationProviding",
+                        "usr": "s:6Aistra17LocationProvidingP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvsZ",
+                "mangledName": "$s6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvsZ",
+                "moduleName": "Aistra",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvMZ",
+                "mangledName": "$s6Aistra0A3SDKC16locationProviderAA17LocationProviding_pSgvMZ",
+                "moduleName": "Aistra",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Aistra@objc(cs)AistraSDK",
+        "mangledName": "$s6Aistra0A3SDKC",
+        "moduleName": "Aistra",
+        "objc_name": "AistraSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreTelephony",
+        "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "AistraInternal",
+        "printedName": "AistraInternal",
+        "declKind": "Import",
+        "moduleName": "Aistra",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdEvent",
+        "printedName": "AdEvent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "win",
+            "printedName": "win",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Aistra.AdEvent.Type) -> Aistra.AdEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdEvent",
+                    "printedName": "Aistra.AdEvent",
+                    "usr": "s:6Aistra7AdEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Aistra.AdEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEvent",
+                        "printedName": "Aistra.AdEvent",
+                        "usr": "s:6Aistra7AdEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6Aistra7AdEventO3winyA2CmF",
+            "mangledName": "$s6Aistra7AdEventO3winyA2CmF",
+            "moduleName": "Aistra",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "impression",
+            "printedName": "impression",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Aistra.AdEvent.Type) -> Aistra.AdEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdEvent",
+                    "printedName": "Aistra.AdEvent",
+                    "usr": "s:6Aistra7AdEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Aistra.AdEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEvent",
+                        "printedName": "Aistra.AdEvent",
+                        "usr": "s:6Aistra7AdEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6Aistra7AdEventO10impressionyA2CmF",
+            "mangledName": "$s6Aistra7AdEventO10impressionyA2CmF",
+            "moduleName": "Aistra",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "click",
+            "printedName": "click",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Aistra.AdEvent.Type) -> Aistra.AdEvent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdEvent",
+                    "printedName": "Aistra.AdEvent",
+                    "usr": "s:6Aistra7AdEventO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Aistra.AdEvent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEvent",
+                        "printedName": "Aistra.AdEvent",
+                        "usr": "s:6Aistra7AdEventO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6Aistra7AdEventO5clickyA2CmF",
+            "mangledName": "$s6Aistra7AdEventO5clickyA2CmF",
+            "moduleName": "Aistra",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdEvent",
+                "printedName": "Aistra.AdEvent",
+                "usr": "s:6Aistra7AdEventO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdEvent",
+                "printedName": "Aistra.AdEvent",
+                "usr": "s:6Aistra7AdEventO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Aistra7AdEventO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s6Aistra7AdEventO2eeoiySbAC_ACtFZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra7AdEventO9hashValueSivp",
+            "mangledName": "$s6Aistra7AdEventO9hashValueSivp",
+            "moduleName": "Aistra",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra7AdEventO9hashValueSivg",
+                "mangledName": "$s6Aistra7AdEventO9hashValueSivg",
+                "moduleName": "Aistra",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Aistra7AdEventO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s6Aistra7AdEventO4hash4intoys6HasherVz_tF",
+            "moduleName": "Aistra",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:6Aistra7AdEventO",
+        "mangledName": "$s6Aistra7AdEventO",
+        "moduleName": "Aistra",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdEventMeta",
+        "printedName": "AdEventMeta",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "adomain",
+            "printedName": "adomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra11AdEventMetaV7adomainSSSgvp",
+            "mangledName": "$s6Aistra11AdEventMetaV7adomainSSSgvp",
+            "moduleName": "Aistra",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra11AdEventMetaV7adomainSSSgvg",
+                "mangledName": "$s6Aistra11AdEventMetaV7adomainSSSgvg",
+                "moduleName": "Aistra",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bundle",
+            "printedName": "bundle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra11AdEventMetaV6bundleSSSgvp",
+            "mangledName": "$s6Aistra11AdEventMetaV6bundleSSSgvp",
+            "moduleName": "Aistra",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra11AdEventMetaV6bundleSSSgvg",
+                "mangledName": "$s6Aistra11AdEventMetaV6bundleSSSgvg",
+                "moduleName": "Aistra",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(adomain:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdEventMeta",
+                "printedName": "Aistra.AdEventMeta",
+                "usr": "s:6Aistra11AdEventMetaV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Aistra11AdEventMetaV7adomain6bundleACSSSg_AFtcfc",
+            "mangledName": "$s6Aistra11AdEventMetaV7adomain6bundleACSSSg_AFtcfc",
+            "moduleName": "Aistra",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6Aistra11AdEventMetaV",
+        "mangledName": "$s6Aistra11AdEventMetaV",
+        "moduleName": "Aistra",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "AppTrackingTransparency",
+        "printedName": "AppTrackingTransparency",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "AdSupport",
+        "printedName": "AdSupport",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IdentifierProviding",
+        "printedName": "IdentifierProviding",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "idfv",
+            "printedName": "idfv",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra19IdentifierProvidingP4idfvSSvp",
+            "mangledName": "$s6Aistra19IdentifierProvidingP4idfvSSvp",
+            "moduleName": "Aistra",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra19IdentifierProvidingP4idfvSSvg",
+                "mangledName": "$s6Aistra19IdentifierProvidingP4idfvSSvg",
+                "moduleName": "Aistra",
+                "genericSig": "<τ_0_0 where τ_0_0 : Aistra.IdentifierProviding>",
+                "sugared_genericSig": "<Self where Self : Aistra.IdentifierProviding>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "idfa",
+            "printedName": "idfa",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra19IdentifierProvidingP4idfaSSSgvp",
+            "mangledName": "$s6Aistra19IdentifierProvidingP4idfaSSSgvp",
+            "moduleName": "Aistra",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra19IdentifierProvidingP4idfaSSSgvg",
+                "mangledName": "$s6Aistra19IdentifierProvidingP4idfaSSSgvg",
+                "moduleName": "Aistra",
+                "genericSig": "<τ_0_0 where τ_0_0 : Aistra.IdentifierProviding>",
+                "sugared_genericSig": "<Self where Self : Aistra.IdentifierProviding>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6Aistra19IdentifierProvidingP",
+        "mangledName": "$s6Aistra19IdentifierProvidingP",
+        "moduleName": "Aistra",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LocationProviding",
+        "printedName": "LocationProviding",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "coordinate",
+            "printedName": "coordinate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(latitude: Swift.Double, longitude: Swift.Double)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(latitude: Swift.Double, longitude: Swift.Double)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Aistra17LocationProvidingP10coordinateSd8latitude_Sd9longitudetSgvp",
+            "mangledName": "$s6Aistra17LocationProvidingP10coordinateSd8latitude_Sd9longitudetSgvp",
+            "moduleName": "Aistra",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(latitude: Swift.Double, longitude: Swift.Double)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(latitude: Swift.Double, longitude: Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Aistra17LocationProvidingP10coordinateSd8latitude_Sd9longitudetSgvg",
+                "mangledName": "$s6Aistra17LocationProvidingP10coordinateSd8latitude_Sd9longitudetSgvg",
+                "moduleName": "Aistra",
+                "genericSig": "<τ_0_0 where τ_0_0 : Aistra.LocationProviding>",
+                "sugared_genericSig": "<Self where Self : Aistra.LocationProviding>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6Aistra17LocationProvidingP",
+        "mangledName": "$s6Aistra17LocationProvidingP",
+        "moduleName": "Aistra",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "CFNetwork",
+        "printedName": "CFNetwork",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Aistra"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4289,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "StringLiteral",
+      "offset": 11435,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "StringLiteral",
+      "offset": 11462,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "StringLiteral",
+      "offset": 11497,
+      "length": 10,
+      "value": "\"portrait\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11533,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11561,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11590,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "FloatLiteral",
+      "offset": 11616,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "FloatLiteral",
+      "offset": 11645,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11733,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11766,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11841,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3747,
+      "length": 12,
+      "value": "\"aistra_ver\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3778,
+      "length": 5,
+      "value": "\"ifa\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3803,
+      "length": 5,
+      "value": "\"lmt\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3827,
+      "length": 3,
+      "value": "\"w\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3849,
+      "length": 3,
+      "value": "\"h\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3871,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3904,
+      "length": 10,
+      "value": "\"boottime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3938,
+      "length": 19,
+      "value": "\"connectionlatency\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 3983,
+      "length": 11,
+      "value": "\"inputlang\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4017,
+      "length": 8,
+      "value": "\"geolat\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4048,
+      "length": 8,
+      "value": "\"geolon\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4085,
+      "length": 14,
+      "value": "\"batterysaver\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4128,
+      "length": 14,
+      "value": "\"memavailable\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4167,
+      "length": 10,
+      "value": "\"memtotal\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4206,
+      "length": 14,
+      "value": "\"screenbright\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4248,
+      "length": 13,
+      "value": "\"appduration\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4289,
+      "length": 13,
+      "value": "\"appinittime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4334,
+      "length": 17,
+      "value": "\"sessionduration\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4386,
+      "length": 20,
+      "value": "\"lastbackgroundtime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4441,
+      "length": 20,
+      "value": "\"lastforegroundtime\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4495,
+      "length": 19,
+      "value": "\"impressionhistory\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4545,
+      "length": 16,
+      "value": "\"connectiontype\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 4588,
+      "length": 12,
+      "value": "\"devicetype\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/AistraVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 7,
+      "value": "\"2.0.0\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/AprXorEnc.swift",
+      "kind": "StringLiteral",
+      "offset": 823,
+      "length": 5,
+      "value": "\"ae1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/AprXorEnc.swift",
+      "kind": "StringLiteral",
+      "offset": 864,
+      "length": 66,
+      "value": "\"6cxqx3vRwA41I8FvZFTjS55xWj5mjvVX2CfV0UP5ywgv0nZ6PoDUeH_it986sZWz\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/AprXorEnc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 978,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1058,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1084,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1106,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1139,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1167,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1195,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1223,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ConnectionTypeProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1251,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/DisplayInfo.swift",
+      "kind": "Dictionary",
+      "offset": 2737,
+      "length": 2804,
+      "value": "[(\"iPhone1,1\", (\"iPhone\", 163)), (\"iPhone1,2\", (\"iPhone 3G\", 163)), (\"iPhone2,1\", (\"iPhone 3GS\", 163)), (\"iPhone3,1\", (\"iPhone 4\", 326)), (\"iPhone3,2\", (\"iPhone 4\", 326)), (\"iPhone3,3\", (\"iPhone 4\", 326)), (\"iPhone4,1\", (\"iPhone 4S\", 326)), (\"iPhone4,2\", (\"iPhone 4S\", 326)), (\"iPhone4,3\", (\"iPhone 4S\", 326)), (\"iPhone5,1\", (\"iPhone 5\", 326)), (\"iPhone5,2\", (\"iPhone 5\", 326)), (\"iPhone5,3\", (\"iPhone 5C\", 326)), (\"iPhone5,4\", (\"iPhone 5C\", 326)), (\"iPhone6,1\", (\"iPhone 5S\", 326)), (\"iPhone6,2\", (\"iPhone 5S\", 326)), (\"iPhone7,2\", (\"iPhone 6\", 326)), (\"iPhone7,1\", (\"iPhone 6 Plus\", 401)), (\"iPhone8,1\", (\"iPhone 6S\", 326)), (\"iPhone8,2\", (\"iPhone 6S Plus\", 401)), (\"iPhone8,4\", (\"iPhone SE\", 326)), (\"iPhone9,1\", (\"iPhone 7\", 326)), (\"iPhone9,3\", (\"iPhone 7\", 326)), (\"iPhone9,2\", (\"iPhone 7 Plus\", 401)), (\"iPhone9,4\", (\"iPhone 7 Plus\", 401)), (\"iPhone10,1\", (\"iPhone 8\", 326)), (\"iPhone10,4\", (\"iPhone 8\", 326)), (\"iPhone10,2\", (\"iPhone 8 Plus\", 401)), (\"iPhone10,5\", (\"iPhone 8 Plus\", 401)), (\"iPhone10,3\", (\"iPhone X\", 458)), (\"iPhone10,6\", (\"iPhone X\", 458)), (\"iPhone11,2\", (\"iPhone XS\", 458)), (\"iPhone11,4\", (\"iPhone XS Max\", 458)), (\"iPhone11,6\", (\"iPhone XS Max\", 458)), (\"iPhone11,8\", (\"iPhone XR\", 326)), (\"iPhone12,1\", (\"iPhone 11\", 326)), (\"iPhone12,3\", (\"iPhone 11 Pro\", 458)), (\"iPhone12,5\", (\"iPhone 11 Pro Max\", 458)), (\"iPhone12,8\", (\"iPhone SE 2\", 326)), (\"iPhone13,1\", (\"iPhone 12 mini\", 476)), (\"iPhone13,2\", (\"iPhone 12\", 460)), (\"iPhone13,3\", (\"iPhone 12 Pro\", 460)), (\"iPhone13,4\", (\"iPhone 12 Pro Max\", 458)), (\"iPhone14,4\", (\"iPhone 13 mini\", 476)), (\"iPhone14,5\", (\"iPhone 13\", 460)), (\"iPhone14,2\", (\"iPhone 13 Pro\", 460)), (\"iPhone14,3\", (\"iPhone 13 Pro Max\", 458)), (\"iPhone14,6\", (\"iPhone SE 3\", 326)), (\"iPhone14,7\", (\"iPhone 14\", 460)), (\"iPhone14,8\", (\"iPhone 14 Plus\", 458)), (\"iPhone15,2\", (\"iPhone 14 Pro\", 460)), (\"iPhone15,3\", (\"iPhone 14 Pro Max\", 460)), (\"iPhone15,4\", (\"iPhone 15\", 460)), (\"iPhone15,5\", (\"iPhone 15 Plus\", 460)), (\"iPhone16,1\", (\"iPhone 15 Pro\", 460)), (\"iPhone16,2\", (\"iPhone 15 Pro Max\", 460)), (\"iPhone17,3\", (\"iPhone 16\", 460)), (\"iPhone17,4\", (\"iPhone 16 Plus\", 460)), (\"iPhone17,1\", (\"iPhone 16 Pro\", 460)), (\"iPhone17,2\", (\"iPhone 16 Pro Max\", 460)), (\"iPhone17,5\", (\"iPhone 16e\", 460)), (\"iPhone18,1\", (\"iPhone 17 Pro\", 460)), (\"iPhone18,2\", (\"iPhone 17 Pro Max\", 460)), (\"iPhone18,3\", (\"iPhone 17\", 460)), (\"iPhone18,4\", (\"iPhone Air\", 460))]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/HardwareInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 596,
+      "length": 28,
+      "value": "\"SIMULATOR_MODEL_IDENTIFIER\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/HardwareInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 629,
+      "length": 11,
+      "value": "\"Simulator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/IPAddressProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1228,
+      "length": 40,
+      "value": "\"https:\/\/adx6.apx.appier.net\/v2\/sdk\/net\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/IPAddressProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1410,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/IPAddressProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1466,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/IPAddressProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 1711,
+      "length": 22,
+      "value": "\"com.appier.signal.ip\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/IPAddressProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1987,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ImpressionHistoryTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1924,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ImpressionHistoryTracker.swift",
+      "kind": "Array",
+      "offset": 2367,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ImpressionHistoryTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3897,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/ImpressionHistoryTracker.swift",
+      "kind": "Array",
+      "offset": 3978,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/LatencyProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 875,
+      "length": 50,
+      "value": "\"https:\/\/cr.adsappier.com\/4QGDNtuHG\/icon\/Info.svg\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/LatencyProvider.swift",
+      "kind": "IntegerLiteral",
+      "offset": 981,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/PotHistoryTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1079,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/PotHistoryTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 1181,
+      "length": 30,
+      "value": "\"com.appier.signal.potHistory\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/PotHistoryTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1922,
+      "length": 5,
+      "value": "2000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 449,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 562,
+      "length": 39,
+      "value": "\"com.appier.signal.lastForegroundTimes\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 638,
+      "length": 39,
+      "value": "\"com.appier.signal.lastBackgroundTimes\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 711,
+      "length": 42,
+      "value": "\"com.appier.signal.todayForegroundSeconds\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "StringLiteral",
+      "offset": 784,
+      "length": 29,
+      "value": "\"com.appier.signal.todayDate\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1151,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1289,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/SessionActivityTracker.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1379,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/UserAgentProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 816,
+      "length": 29,
+      "value": "\"com.appier.signal.userAgent\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/UserAgentProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 39,
+      "value": "\"com.appier.signal.userAgent.osVersion\""
+    }
+  ]
+}
