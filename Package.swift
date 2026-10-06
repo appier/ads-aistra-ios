@@ -36,7 +36,8 @@ let package = Package(
                 .linkedFramework("Network"),
                 .linkedFramework("AdSupport"),
                 .linkedFramework("AppTrackingTransparency"),
-                .linkedFramework("StoreKit")
+                .linkedFramework("StoreKit"),
+                .linkedFramework("WebKit")
             ]
         )
     ]

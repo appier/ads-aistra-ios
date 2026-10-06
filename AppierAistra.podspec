@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   # three integration paths (SPM / CocoaPods / direct download) share one tag.
   s.source       = { :git => "https://github.com/appier/ads-aistra-ios.git", :tag => package['version'][1..-1] }
   s.ios.vendored_frameworks = 'Aistra.xcframework'
-  s.frameworks   = 'Foundation', 'UIKit', 'AVFoundation', 'CoreTelephony', 'Network', 'AdSupport', 'AppTrackingTransparency', 'StoreKit'
+  s.frameworks   = 'Foundation', 'UIKit', 'AVFoundation', 'CoreTelephony', 'Network', 'AdSupport', 'AppTrackingTransparency', 'StoreKit', 'WebKit'
   s.requires_arc = true
   s.readme = 'https://github.com/appier/ads-aistra-ios/blob/main/README.md'
 end
