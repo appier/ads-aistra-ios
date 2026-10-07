@@ -17,9 +17,9 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(AistraSDK) final public class AistraSDK : ObjectiveC.NSObject {
-  public static func start()
-  public static var version: Swift.String {
-    get
+  @objc public static func start()
+  @objc(sdkVersion) public static var version: Swift.String {
+    @objc get
   }
   public static func recordAdEvent(_ event: Aistra.AdEvent, bidObjId: Swift.String, meta: Aistra.AdEventMeta = .init())
   public static func recordStoreViewDisplayed()

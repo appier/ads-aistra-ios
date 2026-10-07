@@ -369,9 +369,18 @@ extern "C" {
 
 #if defined(__OBJC__)
 
+@class NSString;
 @class NSData;
 SWIFT_CLASS_NAMED("AistraSDK")
 @interface AistraSDK : NSObject
+/// Call once, as early as possible (e.g. application(_:didFinishLaunchingWithOptions:)).
+/// Bridged to Objective-C as <code>+ (void)start</code>.
++ (void)start;
+/// Aistra SDK version, available without starting signal collection.
+/// Bridged to Objective-C as <code>+ (NSString *)sdkVersion</code>; <code>version</code> would clash
+/// with NSObject’s <code>+ (NSInteger)version</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
++ (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
 /// Returns the payload to embed in an ad request (XOR-obfuscated; the ad
 /// server decrypts it). Bridged to Objective-C as <code>+ (NSData *)getData</code>.
 + (NSData * _Nonnull)getData SWIFT_WARN_UNUSED_RESULT;
