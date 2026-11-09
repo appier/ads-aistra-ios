@@ -24,6 +24,9 @@ import _SwiftConcurrencyShims
   public static func recordAdEvent(_ event: Aistra.AdEvent, bidObjId: Swift.String, meta: Aistra.AdEventMeta = .init())
   public static func recordStoreViewDisplayed()
   @objc public static func getData() -> Foundation.Data
+  @objc public static var userAgent: Swift.String? {
+    @objc get
+  }
   public static var locationProvider: (any Aistra.LocationProviding)? {
     get
     set
