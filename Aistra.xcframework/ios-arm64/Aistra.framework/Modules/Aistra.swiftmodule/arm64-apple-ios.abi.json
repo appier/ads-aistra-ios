@@ -182,6 +182,71 @@
           },
           {
             "kind": "Var",
+            "name": "userAgent",
+            "printedName": "userAgent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Aistra@objc(cs)AistraSDK(cpy)userAgent",
+            "mangledName": "$s6Aistra0A3SDKC9userAgentSSSgvpZ",
+            "moduleName": "Aistra",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Aistra@objc(cs)AistraSDK(cm)userAgent",
+                "mangledName": "$s6Aistra0A3SDKC9userAgentSSSgvgZ",
+                "moduleName": "Aistra",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "locationProvider",
             "printedName": "locationProvider",
             "children": [
@@ -1296,84 +1361,84 @@
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "BooleanLiteral",
-      "offset": 4571,
+      "offset": 4894,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "StringLiteral",
-      "offset": 11717,
+      "offset": 12175,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "StringLiteral",
-      "offset": 11744,
+      "offset": 12202,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "StringLiteral",
-      "offset": 11779,
+      "offset": 12237,
       "length": 10,
       "value": "\"portrait\""
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "IntegerLiteral",
-      "offset": 11815,
+      "offset": 12273,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "IntegerLiteral",
-      "offset": 11843,
+      "offset": 12301,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "IntegerLiteral",
-      "offset": 11872,
+      "offset": 12330,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "FloatLiteral",
-      "offset": 11898,
+      "offset": 12356,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "FloatLiteral",
-      "offset": 11927,
+      "offset": 12385,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "BooleanLiteral",
-      "offset": 12015,
+      "offset": 12473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "IntegerLiteral",
-      "offset": 12048,
+      "offset": 12506,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Aistra.swift",
       "kind": "BooleanLiteral",
-      "offset": 12123,
+      "offset": 12581,
       "length": 5,
       "value": "false"
     },
@@ -1543,7 +1608,7 @@
       "kind": "StringLiteral",
       "offset": 718,
       "length": 7,
-      "value": "\"2.0.1\""
+      "value": "\"2.1.0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/appier-ads-data-signal-ios\/appier-ads-data-signal-ios\/AppierAdsDataSignalSdk\/Sources\/AprXorEnc.swift",

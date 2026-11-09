@@ -384,6 +384,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// Returns the payload to embed in an ad request (XOR-obfuscated; the ad
 /// server decrypts it). Bridged to Objective-C as <code>+ (NSData *)getData</code>.
 + (NSData * _Nonnull)getData SWIFT_WARN_UNUSED_RESULT;
+/// WebKit’s default user agent (<code>navigator.userAgent</code>), the same value
+/// <code>getData()</code> emits as <code>ua</code>; nil until Aistra has resolved it. Non-blocking;
+/// safe from any thread. Bridged to Objective-C as <code>+ (NSString *)userAgent</code>.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable userAgent;)
++ (NSString * _Nullable)userAgent SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
