@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Aistra-Swift.h</key>
 		<data>
-		ZUaSmLmwa7pG46gVGsMP2jSyffI=
+		LR9t9ielEWJ2VeAgGx7dwGDGOQ8=
 		</data>
 		<key>Headers/Aistra.h</key>
 		<data>
@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+UBuOIJhUIWECtSo10uxwsU0Ygo=
+		lyirKI3gMjVyRRsCKTInR/zbIFo=
 		</data>
 		<key>Modules/Aistra.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		nsD4z18Ewb4mFfCBb9Ed9GzrrCI=
+		3TY0vnLLOOJ23aBcFCLk6LzpAM0=
 		</data>
 		<key>Modules/Aistra.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/Aistra.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		IFyuvlCSGyyzNd79rjMFx5FB6Xw=
+		//3pzLbPvdtrkbp49zD1NMwMSQU=
 		</data>
 		<key>Modules/Aistra.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Aistra.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+r+bS5n7VsDkJnhY5O1Ds8WLu8Q=
+		A1egUsmVzN1uceq7fTz2OI6CxsY=
 		</data>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		nsD4z18Ewb4mFfCBb9Ed9GzrrCI=
+		3TY0vnLLOOJ23aBcFCLk6LzpAM0=
 		</data>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DpPRs/jXKMk6KbSX29zQw0U17HE=
+		3EZcnFAy4wttkHcdwfjlIQ6KDEQ=
 		</data>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dheA9iR4fu7gT2GAnSk6BoC6V/k=
+		wOMJb3yTk+C00H4o56bAOu2gBB8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			D7TUKO+A5UUj/2r2jX9g5K04RGY+q478yjAXdXO0OGI=
+			525StuBrQHHTfNqUyWuWuh9o/x8DL80IF0Ew86tGPZ8=
 			</data>
 		</dict>
 		<key>Headers/Aistra.h</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UpPArUuoUzC2BknyGvqLYDS3ZS34cREnP7lTQRNLBwg=
+			LBIUB140M15oSbD/uFp8zHBz6Qau6dzqbZvpTHq5RbA=
 			</data>
 		</dict>
 		<key>Modules/Aistra.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sCGjsT3kaKL9qMYRzH2sbPT4fxC+ETtOSWvnhaHWtY4=
+			QthX41mQBCtZU2vNBEQQbrARFBqWIVjygf7okEYnfN4=
 			</data>
 		</dict>
 		<key>Modules/Aistra.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gbzTDtChWofEOK5QVQ81jf8ETnAXjzZ/YHrJ7ddr4AU=
+			F7jB0lgH8HqdUquPhtWe+PreazJzxcan2KdPYF12+cs=
 			</data>
 		</dict>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UpPArUuoUzC2BknyGvqLYDS3ZS34cREnP7lTQRNLBwg=
+			LBIUB140M15oSbD/uFp8zHBz6Qau6dzqbZvpTHq5RbA=
 			</data>
 		</dict>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -134,7 +134,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RkKBs11WdMETB5ZQjOCSODy+t+ReJXAUKGFxNyq7FxQ=
+			b5duhW20HJIg/XUK+oM8nFwlxjdhowBiWgo9/qIoBBw=
 			</data>
 		</dict>
 		<key>Modules/Aistra.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5gJOStOg64Obb+I3yeg69dIYCjucZXc0nrMSRrlnWrk=
+			/lER1G2pX3w7XfgJTBZfGQsf09vweKF9BxRirxPCUfY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

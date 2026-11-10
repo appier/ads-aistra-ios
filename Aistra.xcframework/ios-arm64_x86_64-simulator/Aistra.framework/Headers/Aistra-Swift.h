@@ -385,7 +385,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// server decrypts it). Bridged to Objective-C as <code>+ (NSData *)getData</code>.
 + (NSData * _Nonnull)getData SWIFT_WARN_UNUSED_RESULT;
 /// WebKit’s default user agent (<code>navigator.userAgent</code>), the same value
-/// <code>getData()</code> emits as <code>ua</code>; nil until Aistra has resolved it. Non-blocking;
+/// <code>getData()</code> emits as <code>ua</code>; nil until Aistra has resolved it. On
+/// iOS 26 and later, a UA without a <code>Version/</code> token gets
+/// <code> Version/<OS version></code> (three components, e.g. <code> Version/26.3.0</code>)
+/// appended; every iOS 18.x is left unchanged. Non-blocking;
 /// safe from any thread. Bridged to Objective-C as <code>+ (NSString *)userAgent</code>.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable userAgent;)
 + (NSString * _Nullable)userAgent SWIFT_WARN_UNUSED_RESULT;
@@ -788,7 +791,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 /// server decrypts it). Bridged to Objective-C as <code>+ (NSData *)getData</code>.
 + (NSData * _Nonnull)getData SWIFT_WARN_UNUSED_RESULT;
 /// WebKit’s default user agent (<code>navigator.userAgent</code>), the same value
-/// <code>getData()</code> emits as <code>ua</code>; nil until Aistra has resolved it. Non-blocking;
+/// <code>getData()</code> emits as <code>ua</code>; nil until Aistra has resolved it. On
+/// iOS 26 and later, a UA without a <code>Version/</code> token gets
+/// <code> Version/<OS version></code> (three components, e.g. <code> Version/26.3.0</code>)
+/// appended; every iOS 18.x is left unchanged. Non-blocking;
 /// safe from any thread. Bridged to Objective-C as <code>+ (NSString *)userAgent</code>.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable userAgent;)
 + (NSString * _Nullable)userAgent SWIFT_WARN_UNUSED_RESULT;
